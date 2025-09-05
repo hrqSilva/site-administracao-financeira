@@ -1,105 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Administração Financeira</title>
-  <style>
-    * {
-      margin: 0; padding: 0; box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      background-color: #f8f8f8;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: #003366;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-
-    nav {
-      margin-top: 10px;
-    }
-
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .servicos ul {
-      list-style-type: square;
-      padding-left: 20px;
-    }
-
-    .btn-contato {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #003366;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 20px;
-    }
-
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FinançUp - Administração Financeira</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- Header -->
   <header>
-    <h1>Administração Financeira</h1>
-    <p>Gestão de contratos de financiamento e empréstimos</p>
-    <nav>
-      <a href="#servicos">Serviços</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#contato">Contato</a>
-    </nav>
+    <div class="container">
+      <h1>Finanç<span>Up</span></h1>
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h2>Controle suas finanças com inteligência</h2>
+      <p>Gestão eficiente para empresas e pessoas físicas. Segurança, clareza e resultados.</p>
+      <a href="#contato" class="btn">Fale Conosco</a>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="sobre">
+    <div class="container">
+      <h2>Sobre Nós</h2>
+      <p>Somos especialistas em administração financeira com mais de 10 anos de experiência ajudando empresas a crescerem com saúde financeira. Nosso compromisso é com a sua estabilidade e sucesso.</p>
+    </div>
+  </section>
+
+  <!-- Serviços -->
   <section id="servicos" class="servicos">
-    <h2>Serviços</h2>
-    <ul>
-      <li>Administração de contratos de financiamento</li>
-      <li>Consultoria para negociação de dívidas</li>
-      <li>Planejamento financeiro personalizado</li>
-      <li>Relatórios mensais de desempenho</li>
-    </ul>
+    <div class="container">
+      <h2>O que fazemos</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Consultoria Financeira</h3>
+          <p>Planejamento estratégico para melhorar seus resultados.</p>
+        </div>
+        <div class="card">
+          <h3>Controle de Fluxo de Caixa</h3>
+          <p>Organização completa do seu caixa, entradas e saídas.</p>
+        </div>
+        <div class="card">
+          <h3>Gestão de Investimentos</h3>
+          <p>Ajuda na alocação de recursos para maior rentabilidade.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="sobre">
-    <h2>Sobre Nós</h2>
-    <p>Somos uma empresa especializada na gestão financeira de contratos de financiamento e empréstimos, oferecendo suporte personalizado para clientes físicos e jurídicos.</p>
+  <!-- Contato -->
+  <section id="contato" class="contato">
+    <div class="container">
+      <h2>Entre em contato</h2>
+      <form id="formContato">
+        <input type="text" id="nome" placeholder="Seu nome" required>
+        <input type="email" id="email" placeholder="Seu e-mail" required>
+        <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <p id="mensagemSucesso" style="display: none;">Mensagem enviada com sucesso!</p>
+    </div>
   </section>
 
-  <section id="contato">
-    <h2>Fale Conosco</h2>
-    <p>Entre em contato para saber como podemos ajudar na sua vida financeira.</p>
-    <a href="mailto:contato@financeiraexemplo.com" class="btn-contato">Enviar E-mail</a>
-  </section>
-
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Administração Financeira. Todos os direitos reservados.</p>
+    <div class="container">
+      <p>&copy; 2025 FinançUp. Todos os direitos reservados.</p>
+    </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
