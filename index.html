@@ -1,85 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FinançUp - Administração Financeira</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finanças & Quitação</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- Header -->
   <header>
-    <div class="container">
-      <h1>Finanç<span>Up</span></h1>
-      <nav>
-        <ul>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
+    <h1>Finanças & Quitação</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#como-funciona">Como Funciona</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container">
-      <h2>Controle suas finanças com inteligência</h2>
-      <p>Gestão eficiente para empresas e pessoas físicas. Segurança, clareza e resultados.</p>
-      <a href="#contato" class="btn">Fale Conosco</a>
-    </div>
+  <!-- HERO -->
+  <section id="home" class="show">
+    <h2>Recupere sua Saúde Financeira</h2>
+    <p>Soluções personalizadas para renegociação de dívidas e consultoria financeira.</p>
+    <a href="#contato" class="cta">Fale com um Especialista</a>
   </section>
 
-  <!-- Sobre -->
-  <section id="sobre" class="sobre">
-    <div class="container">
-      <h2>Sobre Nós</h2>
-      <p>Somos especialistas em administração financeira com mais de 10 anos de experiência ajudando empresas a crescerem com saúde financeira. Nosso compromisso é com a sua estabilidade e sucesso.</p>
-    </div>
+  <!-- SOBRE -->
+  <section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p class="texto-central">
+      Somos uma empresa especializada em administração financeira e negociação de quitação de dívidas.
+      Nosso objetivo é trazer tranquilidade e equilíbrio financeiro para você e sua empresa.
+    </p>
   </section>
 
-  <!-- Serviços -->
-  <section id="servicos" class="servicos">
-    <div class="container">
-      <h2>O que fazemos</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Consultoria Financeira</h3>
-          <p>Planejamento estratégico para melhorar seus resultados.</p>
-        </div>
-        <div class="card">
-          <h3>Controle de Fluxo de Caixa</h3>
-          <p>Organização completa do seu caixa, entradas e saídas.</p>
-        </div>
-        <div class="card">
-          <h3>Gestão de Investimentos</h3>
-          <p>Ajuda na alocação de recursos para maior rentabilidade.</p>
-        </div>
+  <!-- SERVIÇOS -->
+  <section id="servicos">
+    <h2>Nossos Serviços</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Administração Financeira</h3>
+        <p>Gestão personalizada para organizar suas finanças pessoais ou empresariais.</p>
+      </div>
+      <div class="card">
+        <h3>Renegociação de Dívidas</h3>
+        <p>Negociamos com credores para obter as melhores condições de pagamento.</p>
+      </div>
+      <div class="card">
+        <h3>Consultoria em Financiamentos</h3>
+        <p>Avaliamos opções e ajudamos a reduzir juros e prazos.</p>
+      </div>
+      <div class="card">
+        <h3>Educação Financeira</h3>
+        <p>Treinamentos e dicas para manter seu orçamento saudável.</p>
       </div>
     </div>
   </section>
 
-  <!-- Contato -->
-  <section id="contato" class="contato">
-    <div class="container">
-      <h2>Entre em contato</h2>
-      <form id="formContato">
-        <input type="text" id="nome" placeholder="Seu nome" required>
-        <input type="email" id="email" placeholder="Seu e-mail" required>
-        <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-      <p id="mensagemSucesso" style="display: none;">Mensagem enviada com sucesso!</p>
-    </div>
+  <!-- COMO FUNCIONA -->
+  <section id="como-funciona">
+    <h2>Como Funciona</h2>
+    <ol>
+      <li>Analisamos sua situação financeira.</li>
+      <li>Entramos em contato com seus credores.</li>
+      <li>Negociamos condições especiais para você.</li>
+      <li>Acompanhamos até a quitação completa.</li>
+    </ol>
   </section>
 
-  <!-- Footer -->
+  <!-- CONTATO -->
+  <section id="contato">
+    <h2>Entre em Contato</h2>
+    <form id="contatoForm">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
-    <div class="container">
-      <p>&copy; 2025 FinançUp. Todos os direitos reservados.</p>
-    </div>
+    <p>&copy; 2025 Finanças & Quitação - Todos os direitos reservados</p>
   </footer>
+
+  <!-- BOTÃO WHATSAPP -->
+  <div class="whatsapp" id="whatsappBtn">💬</div>
 
   <script src="script.js"></script>
 </body>
