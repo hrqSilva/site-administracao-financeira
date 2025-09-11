@@ -1,15 +1,21 @@
-// Envio simples do formulário
-document.getElementById('formContato').addEventListener('submit', function(e) {
+// Animação ao rolar a página
+const sections = document.querySelectorAll("section");
+window.addEventListener("scroll", () => {
+  const trigger = window.innerHeight * 0.8;
+  sections.forEach(sec => {
+    const top = sec.getBoundingClientRect().top;
+    if (top < trigger) sec.classList.add("show");
+  });
+});
+
+// Simulação envio de formulário
+document.getElementById("contatoForm").addEventListener("submit", function(e){
   e.preventDefault();
-
-  // Simula envio
-  document.getElementById('mensagemSucesso').style.display = 'block';
-
-  // Limpa os campos
+  alert("Mensagem enviada com sucesso! Em breve entraremos em contato.");
   this.reset();
+});
 
-  // Esconde a mensagem depois de 5 segundos
-  setTimeout(() => {
-    document.getElementById('mensagemSucesso').style.display = 'none';
-  }, 5000);
+// Botão WhatsApp
+document.getElementById("whatsappBtn").addEventListener("click", () => {
+  window.open("https://wa.me/5599999999999?text=Olá, gostaria de mais informações!", "_blank");
 });
