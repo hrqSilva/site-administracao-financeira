@@ -19,3 +19,11 @@ document.getElementById("contatoForm").addEventListener("submit", function(e){
 document.getElementById("whatsappBtn").addEventListener("click", () => {
   window.open("https://wa.me/5599999999999?text=Olá, gostaria de mais informações!", "_blank");
 });
+
+// MENU MOBILE
+const menuToggle = document.getElementById("menuToggle");
+const menu = document.getElementById("menu");
+
+menuToggle.addEventListener("click", () => {
+  menu.classList.toggle("show");
+});
